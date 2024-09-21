@@ -9,7 +9,7 @@ const Home = () => {
         <button className="btn w-10rem">Button</button>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
