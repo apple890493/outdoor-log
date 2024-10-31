@@ -1,8 +1,8 @@
-import presetUnocssIcons from '@unocss/preset-icons';
-import presetUno from '@unocss/preset-uno';
-import presetWebFonts from '@unocss/preset-web-fonts';
-import transformerDirective from '@unocss/transformer-directives';
-import { defineConfig } from 'unocss';
+import presetUnocssIcons from '@unocss/preset-icons'
+import presetUno from '@unocss/preset-uno'
+import presetWebFonts from '@unocss/preset-web-fonts'
+import transformerDirective from '@unocss/transformer-directives'
+import { defineConfig } from 'unocss'
 
 const PRESET = {
   UNO: presetUno(),
@@ -17,14 +17,23 @@ const PRESET = {
       mono: 'ui-monospace, monospace',
     },
   }),
-};
+}
 
 export default defineConfig({
   presets: Object.values(PRESET),
+  theme: {
+    colors: {
+      default: '#faf3dd',
+      primary: '#8fc0a9',
+      primaryLight: '#c8d5b9',
+      secondary: '#68b0ab',
+      secondaryDark: '#4a7c59',
+    },
+  },
   transformers: [transformerDirective()],
   content: {
     pipeline: {
       include: [/\.(ts|tsx|js|jsx|css|html)($|\?)/],
     },
   },
-});
+})
