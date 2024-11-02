@@ -19,6 +19,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@unocss/eslint-config": "^0.63.6",
     "@unocss/webpack": "^0.62.4",
     "eslint": "^8.2.0",
     "eslint-config-next": "13.5.6",

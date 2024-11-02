@@ -5,7 +5,7 @@ const DoorIcon = isLogin ? FaDoorOpen : FaDoorClosed
 
 const Navbar = () => {
   return (
-    <aside className="bg-primary-light color-secondary-dark cursor-pointer h-15 border-rd-md flex flex-row justify-around items-center lg:pt-24 lg:flex-col lg:justify-start lg:gap-3xl lg:h-full lg:w-30 p-4 order-last lg:order-none">
+    <aside className="fixed bottom-0 h-15 w-full flex flex-row cursor-pointer items-center justify-around border-rd-md bg-primary-light p-4 color-secondary-dark lg:static lg:h-full lg:w-30 lg:flex-col lg:justify-start lg:gap-3xl lg:pt-24">
       <FaHome size={28} className="hover:color-secondary" />
       <FaSearchLocation size={28} className="hover:color-secondary" />
       <DoorIcon size={28} className="hover:color-secondary" />
